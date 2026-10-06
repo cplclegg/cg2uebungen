@@ -152,7 +152,10 @@ void CgImageViewer::createAufgabe1Tab()
 
 void CgImageViewer::createAufgabe2Tab()
 {
-    ImGui::Text("Das ist der Tab für Aufgabe 2!\nadd whatever you need");
+    ImGui::Text("Varianz: %lf", m_variance);
+    ImGui::SameLine();
+    ImGui::Text("Mean intensity: %lf", m_mean_intensity);
+
 }
 void CgImageViewer::createAufgabe3Tab()
 {
