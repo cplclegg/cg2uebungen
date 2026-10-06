@@ -31,6 +31,10 @@ int CgImage::getImageHeight()
    return m_image_height;
 }
 
+//======================================
+//======== Aufgabe 1 ===================
+//======================================
+
 void CgImage::setIntensity(int pos_x, int pos_y, int r , int g, int b)
 {
     int index = pixelIndex(pos_x, pos_y);
@@ -160,6 +164,19 @@ int CgImage::pixelIndex(const int x, const int y, const int numberOfChannels) co
     return y*numberOfChannels*m_image_width + numberOfChannels*x;
 }
 
+//======================================
+//======== Aufgabe 2 ===================
+//======================================
+
+double CgImage::imageVariance()
+{
+    return 0.0;
+}
+
+double CgImage::imageMeanIntensity()
+{
+    return 0.0;
+}
 
 // Simple helper function to load an image into unsigned char* with common settings
 bool CgImage::LoadFromFile(const char* filename)
