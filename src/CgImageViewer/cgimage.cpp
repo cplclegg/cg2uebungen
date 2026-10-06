@@ -56,7 +56,42 @@ void CgImage::convertImageToGreyScale()
 
 void CgImage::drawCross(int r, int g, int b, int linewidth)
 {
-    // to be implemented
+    // calculate start and end w/h to center cross with correct width
+
+    int verticalStartColumn  {(m_image_width - linewidth) / 2};
+    int verticalEndColumn {verticalStartColumn + linewidth};
+
+    int horizontalStartRow {(m_image_height - linewidth) / 2};
+    int horizontalEndRow {horizontalStartRow + linewidth};
+
+    // iterate horizontal line by line -> small loop outside, 0 to m_image_width loop inside
+
+    for (int h_row = horizontalStartRow; h_row <= horizontalEndRow; ++h_row)
+    {
+        for (int h_col = 0; h_col < m_image_width; ++h_col)
+        {
+            m_image_data[gridIndex(h_col, h_row)] = r;
+            m_image_data[gridIndex(h_col, h_row) + 1] = g;
+            m_image_data[gridIndex(h_col, h_row) + 2] = b;
+        }
+    }
+
+    // iterate vertical column by column -> 0 to m_image_height loop outside, small loop inside
+
+    for (int v_col = 0; v_col < m_image_height; ++v_col)
+    {
+        for (int v_row = verticalStartColumn; v_row <= verticalEndColumn; ++v_row)
+        {
+            m_image_data[gridIndex(v_col, v_row)] = r;
+            m_image_data[gridIndex(v_col, v_row) + 1] = g;
+            m_image_data[gridIndex(v_col, v_row) + 2] = b;
+        }
+    }
+
+    // create texture from the processed image data for opengl to render
+
+    createTexture();
+
 }
 
 void CgImage::storeOriginalImage()
