@@ -12,6 +12,7 @@ CgImage::CgImage()
     m_image_width=0;
     m_image_height=0;
     m_image_data=nullptr;
+    m_orig_image_data=nullptr;
     m_orig_channels=0;
 }
 
@@ -32,94 +33,131 @@ int CgImage::getImageHeight()
 
 void CgImage::setIntensity(int pos_x, int pos_y, int r , int g, int b)
 {
-    int pixelIndex = gridIndex(pos_x, pos_y);
-    m_image_data[pixelIndex] = r;
-    m_image_data[pixelIndex+1] = g;
-    m_image_data[pixelIndex+2] = b;
+    int index = pixelIndex(pos_x, pos_y);
+    m_image_data[index] = r;
+    m_image_data[index+1] = g;
+    m_image_data[index+2] = b;
 }
 
 void CgImage::setIntensity(int pos_x, int pos_y, int intensity)
 {
-    m_image_data[gridIndex(pos_x, pos_y)] = intensity;
+    m_image_data[pixelIndex(pos_x, pos_y)] = intensity;
 }
 
 int CgImage::getIntensity(int pos_x, int pos_y)
 {
-    return m_image_data[gridIndex(pos_x, pos_y)];
+    return m_image_data[pixelIndex(pos_x, pos_y)];
 }
 
 void CgImage::convertImageToGreyScale()
 {
-    // to be implemented
+
+    if (m_channels == 1) return;
+
+    constexpr double rWeight = 0.299;
+    constexpr double gWeight = 0.587;
+    constexpr double bWeight = 0.114;
+
+    unsigned char* oldDataPointer = m_image_data;
+    size_t pixelCount = m_image_width*m_image_height;
+    auto greyscale = new unsigned char[pixelCount];
+    for (int col = 0; col < m_image_width; ++col)
+    {
+        for (int row = 0; row < m_image_height; ++row)
+        {
+            int rgbIndex = pixelIndex(col, row);
+            int weightedIntensity = (int)((double)m_image_data[rgbIndex]*rWeight);
+            weightedIntensity += (int)((double)m_image_data[rgbIndex+1]*gWeight);
+            weightedIntensity += (int)((double)m_image_data[rgbIndex+2]*bWeight);
+            greyscale[pixelIndex(col, row, 1)] = weightedIntensity;
+        }
+    }
+    m_image_data = greyscale;
+    m_channels = 1;
+    stbi_image_free(oldDataPointer);
+    createTexture();
 }
 
 
 void CgImage::drawCross(int r, int g, int b, int linewidth)
 {
-    // calculate start and end w/h to center cross with correct width
+    storeOriginalImage();
 
+    // calculate start and end w/h to center cross with correct width
     int verticalStartColumn  {(m_image_width - linewidth) / 2};
     int verticalEndColumn {verticalStartColumn + linewidth};
-
     int horizontalStartRow {(m_image_height - linewidth) / 2};
     int horizontalEndRow {horizontalStartRow + linewidth};
 
-    // iterate horizontal line by line -> small loop outside, 0 to m_image_width loop inside
-
-    for (int h_row = horizontalStartRow; h_row <= horizontalEndRow; ++h_row)
+    // iterate horizontal line by line
+    for (int h_row = horizontalStartRow; h_row < horizontalEndRow; ++h_row)
     {
         for (int h_col = 0; h_col < m_image_width; ++h_col)
         {
-            m_image_data[gridIndex(h_col, h_row)] = r;
-            m_image_data[gridIndex(h_col, h_row) + 1] = g;
-            m_image_data[gridIndex(h_col, h_row) + 2] = b;
+            if (m_channels == 3)
+                setIntensity(h_col, h_row, r, g, b);
+            else
+                setIntensity(h_col, h_row, r);
         }
     }
 
-    // iterate vertical column by column -> 0 to m_image_height loop outside, small loop inside
-
-    for (int v_col = 0; v_col < m_image_height; ++v_col)
+    // iterate vertical column by column
+    for (int v_row = 0; v_row < m_image_height; ++v_row)
     {
-        for (int v_row = verticalStartColumn; v_row <= verticalEndColumn; ++v_row)
+        for (int v_col = verticalStartColumn; v_col < verticalEndColumn; ++v_col)
         {
-            m_image_data[gridIndex(v_col, v_row)] = r;
-            m_image_data[gridIndex(v_col, v_row) + 1] = g;
-            m_image_data[gridIndex(v_col, v_row) + 2] = b;
+            if (m_channels == 3)
+                setIntensity(v_col, v_row, r, g, b);
+            else
+                setIntensity(v_col, v_row, r);
         }
     }
 
     // create texture from the processed image data for opengl to render
-
     createTexture();
 
+    resetImage();
 }
 
 void CgImage::storeOriginalImage()
 {
     // eine Kopie des aktuellen Bildes merken
-    // to be implemented
+    int pixelCount = m_image_width*m_image_height;
+    size_t imageMemSize = pixelCount * m_channels * sizeof(unsigned char);
+    m_orig_image_data = new unsigned char[imageMemSize];
+    memcpy(m_orig_image_data, m_image_data, imageMemSize);
+    m_orig_channels = m_channels;
 }
 
 void CgImage::resetImage()
 {
     // aktuelles Bild aus der Kopie wiederherstellen ohne neu zu laden
-    // to be implemented
+    int pixelCount = m_image_width*m_image_height;
+    size_t imageMemSize = pixelCount * m_channels * sizeof(unsigned char);
+    memcpy(m_image_data, m_orig_image_data, imageMemSize);
 }
 
 void CgImage::deleteImage()
 {
     // Speicher aufräumen, wird z.B. aufgerufen wenn ein neues Bild geladen wird
-    // to be implemented
+    stbi_image_free(m_image_data);
+    m_image_data = nullptr;
 }
 void CgImage::deleteOrigImage()
 {
     // Speicher aufräumen, wird z.B. aufgerufen bevor ein aktuelles Bild gemerkt werden soll
-    // to be implemented
+    free(m_orig_image_data);
+    m_orig_image_data = nullptr;
 }
 
-int CgImage::gridIndex(const int x, const int y) const
+int CgImage::pixelIndex(const int x, const int y) const
 {
     return y*m_channels*m_image_width + m_channels*x;
+}
+
+int CgImage::pixelIndex(const int x, const int y, const int numberOfChannels) const
+{
+    return y*numberOfChannels*m_image_width + numberOfChannels*x;
 }
 
 
