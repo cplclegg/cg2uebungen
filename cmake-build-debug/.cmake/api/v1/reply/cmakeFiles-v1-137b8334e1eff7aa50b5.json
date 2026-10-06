@@ -1,0 +1,1120 @@
+{
+	"globsDependent" : 
+	[
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/*.cpp",
+			"listDirectories" : true,
+			"paths" : []
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/*.h",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/cgbasegui.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/cgbasehalfdgeprimitives.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/cgbasehalfedgetrianglemesh.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/cgbasepointcloud.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/cgbasepointlist.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/cgbaserenderableobject.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/cgbasetrianglefan.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgBase/cgbasetrianglemesh.h"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/*.cpp",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cghalfedgeprimitives.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cghalfedgetrianglemesh.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgpointcloud.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgpointlist.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgsphere.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgtrianglefan.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgtrianglemesh.cpp"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/*.h",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cghalfedgeprimitives.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cghalfedgetrianglemesh.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgpointcloud.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgpointlist.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgsphere.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgtrianglefan.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgGeometry/cgtrianglemesh.h"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgImageViewer/*.cpp",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgImageViewer/cgimage.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgImageViewer/cgimageviewer.cpp"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgImageViewer/*.h",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgImageViewer/cgimage.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgImageViewer/cgimageviewer.h"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgMath/*.cpp",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgMath/cgeigendecomposition3x3.cpp"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgMath/*.h",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgMath/cgeigendecomposition3x3.h"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/*.cpp",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgframebuffershader.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgglbufferobject.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgglframebuffer.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgopenglrenderinggui.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgshader.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgtrackball.cpp"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/*.h",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgframebuffershader.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgglbufferobject.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgglframebuffer.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgopenglrenderinggui.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgshader.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/cgtrackball.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/shadercodephong.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgRendering3d/vertexholder.h"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgUtils/*.cpp",
+			"listDirectories" : true,
+			"paths" : []
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgUtils/*.h",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgUtils/stb_image.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgUtils/textureloader.h",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/CgUtils/tiny_obj_loader.h"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/main/*.cpp",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/main/cgglfwwindow.cpp",
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/main/main.cpp"
+			]
+		},
+		{
+			"expression" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/main/*.h",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/home/tomnir/Documents/devel/hshbin/cg2uebungen/src/main/cgglfwwindow.h"
+			]
+		}
+	],
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeSystem.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/4.1.2/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linux-Initialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCompilerIdDetection.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/ADSP-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Borland-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Bruce-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Clang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Compaq-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Cray-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/CrayClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Diab-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Embarcadero-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Fujitsu-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GHS-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/HP-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IAR-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Intel-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/LCC-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/MSVC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/NVHPC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/NVIDIA-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/OrangeC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/PGI-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/PathScale-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Renesas-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/SCO-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/SDCC-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/SunPro-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/TI-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/TIClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Tasking-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Watcom-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/XL-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/XLClang-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCCompiler.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/4.1.2/CMakeCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linux-Determine-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCompilerIdDetection.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/ADSP-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Borland-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Clang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Cray-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/CrayClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Diab-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Embarcadero-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Fujitsu-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GHS-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/HP-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IAR-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Intel-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/MSVC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/NVHPC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/NVIDIA-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/OrangeC-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/PGI-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/PathScale-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Renesas-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/SCO-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/TI-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/TIClang-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Tasking-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/Watcom-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/XL-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCXXCompiler.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/4.1.2/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeTestCompilerCommon.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeParseImplicitIncludeInfo.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeParseImplicitLinkInfo.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeParseLibraryArchitecture.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeTestCompilerCommon.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCCompilerABI.c"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCompilerSupport.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/FeatureTesting.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCCompiler.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/4.1.2/CMakeCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Linker/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Linker/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/CMakeInspectCLinker.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCCompiler.cmake.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeTestCompilerCommon.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeParseImplicitIncludeInfo.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeParseImplicitLinkInfo.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeParseLibraryArchitecture.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeTestCompilerCommon.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeDetermineCompilerSupport.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/FeatureTesting.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX-CXXImportStd.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX-CXXImportStd.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCXXCompiler.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/4.1.2/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Linker/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/CMakeInspectCXXLinker.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeCXXCompiler.cmake.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/FindOpenGL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib64/cmake/glfw3/glfw3Config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomnir/.local/opt/clion/bin/cmake/linux/x64/share/cmake-4.1/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib64/cmake/glfw3/glfw3Targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen/cmake-build-debug",
+		"source" : "/home/tomnir/Documents/devel/hshbin/cg2uebungen"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 1
+	}
+}
