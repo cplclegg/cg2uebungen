@@ -46,6 +46,7 @@ void createTexture();
     void storeOriginalImage();
     void deleteImage();
     void deleteOrigImage();
+    int gridIndex(int x, int y) const;
     // Aufgabe 1
     
 
