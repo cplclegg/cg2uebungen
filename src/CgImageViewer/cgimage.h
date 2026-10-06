@@ -29,24 +29,23 @@ private:
     
   // hold the image data, can be manipulated, call createTexture() after manipulation
   unsigned char* m_image_data;
-  //unsigned char* m_orig_image_data;
-    
-    int m_orig_channels;
-    
+  unsigned char* m_orig_image_data;
+
   GLuint m_image_texture;
   int m_image_width; 
   int m_image_height;
   int m_channels;
-
+  int m_orig_channels;
 private:
 
 // Simple helper function to convert unsigned char* into OpenGL Texture 
-void createTexture();
-    
-    void storeOriginalImage();
-    void deleteImage();
-    void deleteOrigImage();
-    int gridIndex(int x, int y) const;
+  void createTexture();
+
+  void storeOriginalImage();
+  void deleteImage();
+  void deleteOrigImage();
+  int pixelIndex(int x, int y) const;
+  int pixelIndex(int x, int y, int numberOfChannels) const;
     // Aufgabe 1
     
 
