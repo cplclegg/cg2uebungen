@@ -40,6 +40,10 @@ private:
     // variables for Aufgabe 1
     ImVec4 a1_cross_color;
     int a1_linewidth;
+
+    // variables for Aufgabe 2
+    double m_variance {0};
+    double m_mean_intensity {0};
 };
 
 #endif
