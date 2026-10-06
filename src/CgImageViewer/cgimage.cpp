@@ -32,19 +32,20 @@ int CgImage::getImageHeight()
 
 void CgImage::setIntensity(int pos_x, int pos_y, int r , int g, int b)
 {
-    // to be implemented
+    int pixelIndex = gridIndex(pos_x, pos_y);
+    m_image_data[pixelIndex] = r;
+    m_image_data[pixelIndex+1] = g;
+    m_image_data[pixelIndex+2] = b;
 }
 
 void CgImage::setIntensity(int pos_x, int pos_y, int intensity)
 {
-    // to be implemented
+    m_image_data[gridIndex(pos_x, pos_y)] = intensity;
 }
 
 int CgImage::getIntensity(int pos_x, int pos_y)
 {
-    // return red value in case of RGB
-    // to be implemented
-    return 0;
+    return m_image_data[gridIndex(pos_x, pos_y)];
 }
 
 void CgImage::convertImageToGreyScale()
@@ -81,8 +82,10 @@ void CgImage::deleteOrigImage()
     // to be implemented
 }
 
-
-
+int CgImage::gridIndex(const int x, const int y) const
+{
+    return y*m_channels*m_image_width + m_channels*x;
+}
 
 
 // Simple helper function to load an image into unsigned char* with common settings
