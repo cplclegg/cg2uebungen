@@ -46,7 +46,9 @@ private:
   void deleteOrigImage();
   int pixelIndex(int x, int y) const;
   int pixelIndex(int x, int y, int numberOfChannels) const;
-    // Aufgabe 1
+  double imageVariance();
+  double imageMeanIntensity();
+  // Aufgabe 1
     
 
 };
