@@ -30,6 +30,7 @@ public:
   void changeContrast(double factor, float targetArray[]);
   void changeBrightnes(int value, float targetArray[]);
   void changeBitDepth(int newDepth, float targetArray[256]);
+  void robustAutoContrast(float s_low, float s_high, float histogram[256]);;
 
 private:
     

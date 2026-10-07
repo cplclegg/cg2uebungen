@@ -262,15 +262,26 @@ void CgImage::changeBitDepth(int newDepth, float targetArray[256])
     int pixelCount {m_image_width*m_image_height};
     for (int i = 0; i < pixelCount; ++i)
     {
-        unsigned int maxN = (1u << newDepth) - 1;
-        unsigned int quantizedPixel = (m_image_data[i] * maxN)/255u;
-        unsigned char result = (quantizedPixel*255u)/maxN;
+        unsigned int newMaxVal = (1 << newDepth)-1; // bit shift left by n == mult by 2^n
+        unsigned int quantizedPixel = (m_image_data[i] * newMaxVal+127)/255; // ratio of old val to old max val applied to new max val
+                                                                             // with offset applied for correct rounding
+        unsigned char result = (quantizedPixel*255)/newMaxVal; // ratio of new val to new max val applied to old max val
         m_image_data[i] = result;
     }
 
     createTexture();
     histogram(targetArray, 256);
     resetImage();
+}
+
+void CgImage::robustAutoContrast(float s_low, float s_high, float histogram[256])
+{
+    float accumulatedHistogram[256];
+    accumulatedHistogram[0] = histogram[0];
+    for (int i = 1; i < 256; ++i)
+    {
+        accumulatedHistogram[i] = histogram[i] + accumulatedHistogram[i-1];
+    }
 }
 
 // Simple helper function to load an image into unsigned char* with common settings
