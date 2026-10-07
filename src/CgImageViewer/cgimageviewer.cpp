@@ -78,6 +78,9 @@ void CgImageViewer::createTestImageView()
         imageview_filename+=gui_current_path;
         imageview_filename+=(std::string)items[item_current];
         my_image.LoadFromFile(imageview_filename.c_str());
+        m_variance = my_image.imageVariance();
+        m_mean_intensity = my_image.imageMeanIntensity();
+
     }
 
      ImGui::ListBox(" ", &item_current, items, IM_ARRAYSIZE(items), 4);
@@ -155,6 +158,11 @@ void CgImageViewer::createAufgabe2Tab()
     ImGui::Text("Varianz: %lf", m_variance);
     ImGui::SameLine();
     ImGui::Text("Mean intensity: %lf", m_mean_intensity);
+    if(ImGui::Button("Create histogram"))
+    {
+        my_image.convertImageToGreyScale();
+        my_image.histogram(m_histogram, 256);
+    }
 
 }
 void CgImageViewer::createAufgabe3Tab()

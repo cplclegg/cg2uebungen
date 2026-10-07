@@ -44,6 +44,7 @@ private:
     // variables for Aufgabe 2
     double m_variance {0};
     double m_mean_intensity {0};
+    int m_histogram[256];
 };
 
 #endif
