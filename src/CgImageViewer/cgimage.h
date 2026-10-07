@@ -17,13 +17,16 @@ public:
   int getImageHeight();
   GLuint& getImageTexture();
     
-    void setIntensity(int pos_x, int pos_y, int r, int g, int b);
-    void setIntensity(int pos_x, int pos_y, int intensity);
-    int  getIntensity(int pos_x, int pos_y);
+  void setIntensity(int pos_x, int pos_y, int r, int g, int b);
+  void setIntensity(int pos_x, int pos_y, int intensity);
+  int  getIntensity(int pos_x, int pos_y);
 
-    void drawCross(int r, int g, int b, int linewidth);
-    void resetImage();
-    void convertImageToGreyScale();
+  void drawCross(int r, int g, int b, int linewidth);
+  void resetImage();
+  void convertImageToGreyScale();
+  double imageVariance();
+  double imageMeanIntensity();
+  void histogram(int targetArray[], size_t length);
     
 private:
     
@@ -46,8 +49,7 @@ private:
   void deleteOrigImage();
   int pixelIndex(int x, int y) const;
   int pixelIndex(int x, int y, int numberOfChannels) const;
-  double imageVariance();
-  double imageMeanIntensity();
+
   // Aufgabe 1
     
 

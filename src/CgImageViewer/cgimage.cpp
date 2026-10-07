@@ -170,12 +170,50 @@ int CgImage::pixelIndex(const int x, const int y, const int numberOfChannels) co
 
 double CgImage::imageVariance()
 {
-    return 0.0;
+    double meanIntensity {imageMeanIntensity()};
+    double pixelCount = {(double)(m_image_width*m_image_height)};
+    double accumulator {0};
+    for (int i = 0; i < pixelCount; ++i)
+    {
+        double diffFromMean {((double)m_image_data[i]-meanIntensity)};
+        accumulator += diffFromMean*diffFromMean;
+    }
+    return accumulator/pixelCount;
 }
 
 double CgImage::imageMeanIntensity()
 {
-    return 0.0;
+    convertImageToGreyScale();
+    double pixelCount {(double)(m_image_width*m_image_height)};
+    double accumulator {0};
+    for (int i = 0; i < m_image_width; ++i)
+    {
+        accumulator += m_image_data[i];
+    }
+    return accumulator/pixelCount;
+}
+
+void CgImage::histogram(int targetArray[256], size_t length)
+{
+    for (int k = 0; k < 256; ++k)
+    {
+        targetArray[k] = 0;
+    }
+    int pixelCount {m_image_width*m_image_height};
+    for (int i = 0; i < pixelCount; ++i)
+    {
+        targetArray[m_image_data[i]]++;
+    }
+    // debug print
+    int total = 0;
+    for (int j = 0; j < length; ++j)
+    {
+        total += targetArray[j];
+        std::cout << j << ": " << targetArray[j] << " ";
+        std::cout << std::endl;
+    }
+    std::cout << "Total: " << total << std::endl;
+    //
 }
 
 // Simple helper function to load an image into unsigned char* with common settings
