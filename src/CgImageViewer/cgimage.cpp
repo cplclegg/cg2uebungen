@@ -277,30 +277,37 @@ void CgImage::changeBitDepth(int newDepth, float targetArray[256])
 void CgImage::robustAutoContrast(float s_low, float s_high, float histogramArray[256])
 {
     float accumulatedHistogram[256];
+    histogram(histogramArray, 256);
     accumulatedHistogram[0] = histogramArray[0];
 
     int pixelCount {m_image_width*m_image_height};
-    float lowDiscardAmount {(s_low * (float)pixelCount)};
-    float highDiscardAmount {((float)pixelCount * (1.0f-s_high))};
+    int lowDiscardAmount {(int)(s_low * (float)pixelCount)};
+    int highDiscardAmount {(int)((float)pixelCount * (1.0f-s_high))};
     int atick_low {0};
     int atick_high {0};
     int a_min {0};
     int a_max {255};
-    for (int i = 1; i < 256; ++i)
+    for (int l = 1; l < 256; ++l)
     {
-        accumulatedHistogram[i] = histogramArray[i] + accumulatedHistogram[i-1];
+        accumulatedHistogram[l] = histogramArray[l] + accumulatedHistogram[l-1];
     }
 
-    for (int j = 0; j < 256; ++j)
+    for (int i = 0; i < 256; ++i)
     {
-        if (histogramArray[j] >= lowDiscardAmount)
+        if (accumulatedHistogram[i] >= lowDiscardAmount)
         {
-            atick_low = j;
+            atick_low = i;
+            break;
         }
-        if (histogramArray[j] <= highDiscardAmount)
+    }
+
+    for (int j = 255; j >= 0; --j)
+    {
+        if (accumulatedHistogram[j] <= highDiscardAmount)
         {
             atick_high = j;
-        } //try later: else break; to avoid needless iterations over acc histogram
+            break;
+        }
     }
     int atick_diff {atick_high-atick_low};
     int a_range = a_max-a_min;
