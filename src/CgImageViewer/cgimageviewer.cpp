@@ -177,11 +177,11 @@ void CgImageViewer::createAufgabe2Tab()
         my_image.changeBitDepth(a2_bitDepth, a2_histogram);
     }
     ImGui::Text("Robust automatic contrast:");
-    if (ImGui::SliderFloat("S_low", &a2_s_low, 0.0f, 1.0f))
+    if (ImGui::SliderFloat("S_low", &a2_s_low, 0.0f, 0.5f))
     {
         my_image.robustAutoContrast(a2_s_low, a2_s_high, a2_histogram);
     }
-    if (ImGui::SliderFloat("S_high", &a2_s_high, 0.0f, 1.0f))
+    if (ImGui::SliderFloat("S_high", &a2_s_high, 0.0f, 0.5f))
     {
         my_image.robustAutoContrast(a2_s_low, a2_s_high, a2_histogram);
     }
