@@ -274,14 +274,58 @@ void CgImage::changeBitDepth(int newDepth, float targetArray[256])
     resetImage();
 }
 
-void CgImage::robustAutoContrast(float s_low, float s_high, float histogram[256])
+void CgImage::robustAutoContrast(float s_low, float s_high, float histogramArray[256])
 {
     float accumulatedHistogram[256];
-    accumulatedHistogram[0] = histogram[0];
+    accumulatedHistogram[0] = histogramArray[0];
+
+    int pixelCount {m_image_width*m_image_height};
+    float lowDiscardAmount {(s_low * (float)pixelCount)};
+    float highDiscardAmount {((float)pixelCount * (1.0f-s_high))};
+    int atick_low {0};
+    int atick_high {0};
+    int a_min {0};
+    int a_max {255};
     for (int i = 1; i < 256; ++i)
     {
-        accumulatedHistogram[i] = histogram[i] + accumulatedHistogram[i-1];
+        accumulatedHistogram[i] = histogramArray[i] + accumulatedHistogram[i-1];
     }
+
+    for (int j = 0; j < 256; ++j)
+    {
+        if (histogramArray[j] >= lowDiscardAmount)
+        {
+            atick_low = j;
+        }
+        if (histogramArray[j] <= highDiscardAmount)
+        {
+            atick_high = j;
+        } //try later: else break; to avoid needless iterations over acc histogram
+    }
+    int atick_diff {atick_high-atick_low};
+    int a_range = a_max-a_min;
+    storeOriginalImage();
+    for (int k = 0; k < pixelCount; ++k)
+    {
+        int pixelIntensity = m_image_data[k];
+        if (pixelIntensity <= atick_low)
+        {
+            m_image_data[k] = a_min;
+            continue;
+        }
+        if (pixelIntensity > atick_low && pixelIntensity < atick_high)
+        {
+            m_image_data[k] = a_min + (pixelIntensity - atick_low)*(a_range/atick_diff);
+            continue;
+        }
+        if (pixelIntensity >= atick_high)
+        {
+            m_image_data[k] = a_max;
+        }
+    }
+    createTexture();
+    histogram(histogramArray, 256);
+    resetImage();
 }
 
 // Simple helper function to load an image into unsigned char* with common settings

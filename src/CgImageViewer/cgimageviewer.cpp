@@ -6,7 +6,7 @@ CgImageViewer::CgImageViewer()
     a1_cross_color = ImVec4(1.f, 0.f, 0.f, 1.00f);
     a1_linewidth=0;
     gui_current_path="";
-    show_demo_window=true;
+    show_demo_window=false;
 }
 
 CgImageViewer::CgImageViewer(std::string current_path)
@@ -175,6 +175,15 @@ void CgImageViewer::createAufgabe2Tab()
     if (ImGui::SliderInt("Bit depth", &a2_bitDepth, 1, 8))
     {
         my_image.changeBitDepth(a2_bitDepth, a2_histogram);
+    }
+    ImGui::Text("Robust automatic contrast:");
+    if (ImGui::SliderFloat("S_low", &a2_s_low, 0.0f, 1.0f))
+    {
+        my_image.robustAutoContrast(a2_s_low, a2_s_high, a2_histogram);
+    }
+    if (ImGui::SliderFloat("S_high", &a2_s_high, 0.0f, 1.0f))
+    {
+        my_image.robustAutoContrast(a2_s_low, a2_s_high, a2_histogram);
     }
 }
 void CgImageViewer::createAufgabe3Tab()

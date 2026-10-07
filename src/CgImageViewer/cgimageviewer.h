@@ -49,6 +49,8 @@ private:
     double a2_mean_intensity {0};
     float a2_histogram[256];
     int a2_bitDepth {8};
+    float a2_s_low {0.0f};
+    float a2_s_high {0.0f};
 };
 
 #endif
