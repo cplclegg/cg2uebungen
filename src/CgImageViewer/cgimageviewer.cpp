@@ -78,8 +78,8 @@ void CgImageViewer::createTestImageView()
         imageview_filename+=gui_current_path;
         imageview_filename+=(std::string)items[item_current];
         my_image.LoadFromFile(imageview_filename.c_str());
-        m_variance = my_image.imageVariance();
-        m_mean_intensity = my_image.imageMeanIntensity();
+        a2_variance = my_image.imageVariance();
+        a2_mean_intensity = my_image.imageMeanIntensity();
 
     }
 
@@ -155,15 +155,27 @@ void CgImageViewer::createAufgabe1Tab()
 
 void CgImageViewer::createAufgabe2Tab()
 {
-    ImGui::Text("Varianz: %lf", m_variance);
+    ImGui::Text("Variance: %lf", a2_variance);
     ImGui::SameLine();
-    ImGui::Text("Mean intensity: %lf", m_mean_intensity);
+    ImGui::Text("Mean intensity: %lf", a2_mean_intensity);
     if(ImGui::Button("Create histogram"))
     {
         my_image.convertImageToGreyScale();
-        my_image.histogram(m_histogram, 256);
+        my_image.histogram(a2_histogram, 256);
     }
-
+    ImGui::PlotHistogram("##histogram", a2_histogram, 256, 0, NULL, 0.0f, FLT_MAX, ImVec2(0, 80.0f));
+    if (ImGui::SliderFloat("Contrast", &a2_contrastFactor, 0, 5.0f))
+    {
+        my_image.changeContrast(a2_contrastFactor, a2_histogram);
+    }
+    if (ImGui::SliderInt("Brightness", &a2_brightnessValue, -255, 255))
+    {
+        my_image.changeBrightnes(a2_brightnessValue, a2_histogram);
+    }
+    if (ImGui::SliderInt("Bit depth", &a2_bitDepth, 1, 8))
+    {
+        my_image.changeBitDepth(a2_bitDepth, a2_histogram);
+    }
 }
 void CgImageViewer::createAufgabe3Tab()
 {

@@ -5,7 +5,7 @@
 #include <GLFW/glfw3.h> 
 #include "stb_image.h"
 #include <iostream>
-
+#include <algorithm>
 
 CgImage::CgImage()
 {
@@ -193,19 +193,19 @@ double CgImage::imageMeanIntensity()
     return accumulator/pixelCount;
 }
 
-void CgImage::histogram(int targetArray[256], size_t length)
+void CgImage::histogram(float targetArray[256], size_t length)
 {
     for (int k = 0; k < 256; ++k)
     {
-        targetArray[k] = 0;
+        targetArray[k] = 0.0;
     }
     int pixelCount {m_image_width*m_image_height};
     for (int i = 0; i < pixelCount; ++i)
     {
         targetArray[m_image_data[i]]++;
     }
-    // debug print
-    int total = 0;
+    /* debug print
+    float total = 0.0f;
     for (int j = 0; j < length; ++j)
     {
         total += targetArray[j];
@@ -213,7 +213,64 @@ void CgImage::histogram(int targetArray[256], size_t length)
         std::cout << std::endl;
     }
     std::cout << "Total: " << total << std::endl;
-    //
+    */
+}
+
+void CgImage::changeContrast(double factor, float targetArray[256])
+{
+    convertImageToGreyScale();
+    storeOriginalImage();
+    int pixelCount {m_image_width*m_image_height};
+    for (int i = 0; i < pixelCount; ++i)
+    {
+        int newVal {(int)((double)m_image_data[i] * factor)};
+        if (newVal > 255) newVal = 255;
+        m_image_data[i] = newVal;
+    }
+    createTexture();
+    histogram(targetArray, 256);
+    resetImage();
+}
+
+void CgImage::changeBrightnes(int value, float targetArray[256])
+{
+    convertImageToGreyScale();
+    storeOriginalImage();
+    int pixelCount {m_image_width*m_image_height};
+    for (int i = 0; i < pixelCount; ++i)
+    {
+        int newVal {m_image_data[i]+value};
+        if (newVal > 255)
+        {
+            newVal = 255;
+            m_image_data[i] = newVal;
+            continue;
+        }
+        if (newVal < 0) newVal = 0;
+        m_image_data[i] = newVal;
+    }
+    createTexture();
+    histogram(targetArray, 256);
+    resetImage();
+}
+
+void CgImage::changeBitDepth(int newDepth, float targetArray[256])
+{
+    convertImageToGreyScale();
+    storeOriginalImage();
+
+    int pixelCount {m_image_width*m_image_height};
+    for (int i = 0; i < pixelCount; ++i)
+    {
+        unsigned int maxN = (1u << newDepth) - 1;
+        unsigned int quantizedPixel = (m_image_data[i] * maxN)/255u;
+        unsigned char result = (quantizedPixel*255u)/maxN;
+        m_image_data[i] = result;
+    }
+
+    createTexture();
+    histogram(targetArray, 256);
+    resetImage();
 }
 
 // Simple helper function to load an image into unsigned char* with common settings

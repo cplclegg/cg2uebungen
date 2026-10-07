@@ -26,8 +26,11 @@ public:
   void convertImageToGreyScale();
   double imageVariance();
   double imageMeanIntensity();
-  void histogram(int targetArray[], size_t length);
-    
+  void histogram(float targetArray[], size_t length);
+  void changeContrast(double factor, float targetArray[]);
+  void changeBrightnes(int value, float targetArray[]);
+  void changeBitDepth(int newDepth, float targetArray[256]);
+
 private:
     
   // hold the image data, can be manipulated, call createTexture() after manipulation

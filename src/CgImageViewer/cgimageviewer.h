@@ -41,10 +41,14 @@ private:
     ImVec4 a1_cross_color;
     int a1_linewidth;
 
+
     // variables for Aufgabe 2
-    double m_variance {0};
-    double m_mean_intensity {0};
-    int m_histogram[256];
+    float a2_contrastFactor {1.0f};
+    int a2_brightnessValue {0};
+    double a2_variance {0};
+    double a2_mean_intensity {0};
+    float a2_histogram[256];
+    int a2_bitDepth {8};
 };
 
 #endif
