@@ -12,7 +12,7 @@ CgImageViewer::CgImageViewer()
 CgImageViewer::CgImageViewer(std::string current_path)
 {
     gui_current_path=current_path;
-    show_demo_window=true;
+    show_demo_window=false;
 }
 
 
@@ -78,8 +78,8 @@ void CgImageViewer::createTestImageView()
         imageview_filename+=gui_current_path;
         imageview_filename+=(std::string)items[item_current];
         my_image.LoadFromFile(imageview_filename.c_str());
-        a2_variance = my_image.imageVariance();
-        a2_mean_intensity = my_image.imageMeanIntensity();
+        //a2_variance = my_image.imageVariance();
+        //a2_mean_intensity = my_image.imageMeanIntensity();
 
     }
 
@@ -155,10 +155,16 @@ void CgImageViewer::createAufgabe1Tab()
 
 void CgImageViewer::createAufgabe2Tab()
 {
+    if (ImGui::Button("Calculate variance and mean intensity (will convert image to greyscale)"))
+    {
+        my_image.convertImageToGreyScale();
+        a2_variance = my_image.imageVariance();
+        a2_mean_intensity = my_image.imageMeanIntensity();
+    }
     ImGui::Text("Variance: %lf", a2_variance);
     ImGui::SameLine();
     ImGui::Text("Mean intensity: %lf", a2_mean_intensity);
-    if(ImGui::Button("Create histogram"))
+    if(ImGui::Button("Create histogram (will convert image to greyscale)"))
     {
         my_image.convertImageToGreyScale();
         my_image.histogram(a2_histogram, 256);

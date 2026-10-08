@@ -183,7 +183,7 @@ double CgImage::imageVariance()
 
 double CgImage::imageMeanIntensity()
 {
-    convertImageToGreyScale();
+    //convertImageToGreyScale();
     double pixelCount {(double)(m_image_width*m_image_height)};
     double accumulator {0};
     for (int i = 0; i < m_image_width; ++i)
@@ -218,7 +218,7 @@ void CgImage::histogram(float targetArray[256], size_t length)
 
 void CgImage::changeContrast(double factor, float targetArray[256])
 {
-    convertImageToGreyScale();
+    //convertImageToGreyScale();
     storeOriginalImage();
     int pixelCount {m_image_width*m_image_height};
     for (int i = 0; i < pixelCount; ++i)
@@ -234,7 +234,7 @@ void CgImage::changeContrast(double factor, float targetArray[256])
 
 void CgImage::changeBrightnes(int value, float targetArray[256])
 {
-    convertImageToGreyScale();
+    //convertImageToGreyScale();
     storeOriginalImage();
     int pixelCount {m_image_width*m_image_height};
     for (int i = 0; i < pixelCount; ++i)
@@ -256,7 +256,7 @@ void CgImage::changeBrightnes(int value, float targetArray[256])
 
 void CgImage::changeBitDepth(int newDepth, float targetArray[256])
 {
-    convertImageToGreyScale();
+    //convertImageToGreyScale();
     storeOriginalImage();
 
     int pixelCount {m_image_width*m_image_height};
